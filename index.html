@@ -15,6 +15,12 @@
   top: 10px;
   right: 10px;
   z-index: 1000; 
+  background-color: #ff69b4; /* 분홍색 */
+  border: none; /* 테두리 제거 */
+  border-radius: 5px; /* 모서리 둥글게 */
+  padding: 5px; /* 내부 여백 추가 */
+  width: 120px; /* 너비 조정 */
+  height: auto; /* 높이 자동 조정 */
 }
     
 body {
@@ -26,7 +32,7 @@ body {
 /* Style the header */
 header {
   /*background-color: #666;*/
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   font-size: 35px;
   color: #c5006d;
@@ -83,7 +89,7 @@ footer {
 
   
 <body>
-<audio controls autoplay loop>
+<audio id = 'audioPlayer' controls autoplay loop>
   <source src="사쿠란보.mp3" type="audio/mpeg">
   Your browser does not support the audio element.
 </audio>
