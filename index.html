@@ -50,26 +50,48 @@
     <br><br><br><hr><br><br><br><br><br>
     <h2 id = '준비'>준비물</h2>
     <form>
-        <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">여권</label> <br>
-        <input type="checkbox" id="checkbox" name="checkbox">
+        <input type="checkbox" id="checkbox1">
+        <label for="checkbox1">여권</label> <br>
+        <input type="checkbox" id="checkbox">
         <label for="checkbox">돼지코</label> <br>
-        <input type="checkbox" id="checkbox" name="checkbox">
+        <input type="checkbox" id="checkbox">
         <label for="checkbox">멀티탭</label> <br>
-        <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">리락이</label> <br>
-        <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">모자, 썬글라스</label> <br>
-        <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">비타민</label> <br>
-        <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">화장품</label> <br>
-        <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">세안도구</label> <br>
-        <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">충전기</label> <br>
-        <input type="checkbox" id="checkbox" name="checkbox">
-        <label for="checkbox">보조배털</label> <br>
+        <input type="checkbox" id="checkbox2">
+        <label for="checkbox2">리락이</label> <br>
+        <input type="checkbox" id="checkbox3">
+        <label for="checkbox3">모자, 썬글라스</label> <br>
+        <input type="checkbox" id="checkbox4">
+        <label for="checkbox4">비타민</label> <br>
+        <input type="checkbox" id="checkbox5">
+        <label for="checkbox5">화장품</label> <br>
+        <input type="checkbox" id="checkbox6">
+        <label for="checkbox6">세안도구</label> <br>
+        <input type="checkbox" id="checkbox7">
+        <label for="checkbox7">충전기</label> <br>
+        <input type="checkbox" id="checkbox8">
+        <label for="checkbox8">보조배털</label> <br><br>
+
+        <button onclick="checkSelected()">다 챙겼어 !!</button>
+
+        <script>
+          function checkSelected() {
+              var allChecked = true;
+              for (var i = 1; i <= 8; i++) {
+                  var checkbox = document.getElementById('checkbox' + i);
+                  if (!checkbox.checked) {
+                      allChecked = false;
+                      break;
+                  }
+              }
+              
+              if (allChecked) {
+                  alert("일본 잘 다녀와 ♪ ");
+              } else {
+                  alert("뭐 빼먹은거 없어?!");
+              }
+          }
+          </script>
+
     </form>
 
     
@@ -79,8 +101,8 @@
     <img src = 'images/time.png', style = 'width:90%'>
     <p>
       <ul style = '  text-align: left;'>
-        <li>토 : 도쿄도착, 점심먹고, 불링, 오락실, 저녁먹고, 클럽</li>
-        <li>일 : 리락쿠마 버스투어, 저녁먹고, 클럽</li>
+        <li>토 : 도쿄도착, 클럽</li>
+        <li>일 : 리락쿠마 버스투어</li>
         <li>월 : 온전한 1루</li>
         <li>화 : 한국가기</li>
       </ul>
@@ -151,7 +173,7 @@
     <p>
         <h1>예매내역</h1>
         <a href="https://www.hatobus.co.jp/search_reservation">예약 사이트</a><br>
-        1100524536, 0여덟개, 알파벳<br>
+        입력정보는 카톡방에 있어♬<br>
         코스번호 A5656 도쿄역 남쪽출구에서 !
     </p>
     <br><hr style="border-width: 1px; border-color:darksalmon; width: 50%;"><br>
